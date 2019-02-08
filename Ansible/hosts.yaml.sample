@@ -1,0 +1,15 @@
+all:
+  children:
+    k8s_master:
+      hosts: 
+        <MASTER_NODE_IP_ADDRESS>
+    k8s_workers:
+      hosts:
+        <WORKER_NODE_IP_ADDRESS>
+        <WORKER_NODE_IP_ADDRESS>
+        .
+        .
+        .
+  vars:
+    ansible_port: <ANSIBLE_PORT>
+    ansible_user: <ANSIBLE_USER>

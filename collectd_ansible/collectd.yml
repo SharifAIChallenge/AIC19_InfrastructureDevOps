@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: install collectd
+      apt:
+        name: collectd
+        state: present
+        update_cache: true

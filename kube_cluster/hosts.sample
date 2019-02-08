@@ -1,0 +1,12 @@
+[masters]
+master ansible_host=<IP_ADDRESS> ansible_user=<USERNAME> ansible_password=<PASSWORD>  ansible_sudo_password=<SUDO_PASSWORD> ansible_port=<PORT_NUMBER>
+
+[workers]
+worker1 ansible_host=<IP_ADDRESS> ansible_user=<USERNAME> ansible_password=<PASSWORD> ansible_sudo_password=<SUDO_PASSWORD>  ansible_port=<PORT_NUMBER>
+worker2 ansible_host=<IP_ADDRESS> ansible_user=<USERNAME> ansible_password=<PASSWORD>  ansible_sudo_password=<SUDO_PASSWORD>  ansible_port=<PORT_NUMBER>
+.
+.
+.
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3

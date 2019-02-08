@@ -1,0 +1,1 @@
+ssh-copy-id <USERNAME>@<DST_IP_ADDRESS> -p <DST_PORT>
